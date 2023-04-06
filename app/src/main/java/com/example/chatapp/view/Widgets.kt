@@ -18,6 +18,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.chatapp.view.ui.theme.ChatAppTheme
+import com.example.chatapp.view.ui.theme.Purple200
 
 @Composable
 fun Title(title: String) {
@@ -102,7 +103,7 @@ fun SingleMessage(message: String, isCurrentUser: Boolean) {
             else
                 TextAlign.Start,
             modifier = Modifier.fillMaxWidth().padding(16.dp),
-            color = if (!isCurrentUser) MaterialTheme.colors.primary else Color.White
+            color = if (!isCurrentUser) Purple200 else Color.White
         )
     }
 }
